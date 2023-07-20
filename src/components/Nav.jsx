@@ -83,6 +83,11 @@ export default function Nav({ cart , removeFromCart}) {
               <Link to='/Cart'><button className='Checkoutbtn'>Proceed To Checkout</button></Link>
               </div>
                 )}
+                {cart.length === 0 && (
+              <div className='divcheckout'>
+              <Link to='/Cart'><h3>Cart is empty</h3></Link>
+              </div>
+                )}
               </div>
               </div>
           )}
